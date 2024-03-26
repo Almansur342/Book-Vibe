@@ -1,21 +1,22 @@
 const Card = ({ item }) => {
-  const { bookId, bookName, image, rating, category, tags } = item;
+  const { bookId, author,bookName, image, rating, category, tags } = item;
   return (
-    <div className="border-2 p-6 card shadow-xl">
-      <figure className=""><img className="h-60  object-cover object-center" src={image} alt="Shoes" /></figure>
-      <div className="my-5">
-        <div className="flex items-center gap-4">
-           <div className="bg-red-600">heloo</div>
-           <div className="bg-yellow-500">fs</div>
+    <div className="border-2 py-4 px-5 card shadow-xl flex flex-col">
+      <figure className="bg-[#F3F3F3] p-3 rounded-lg"><img className="h-52 object-cover object-center" src={image} alt="Shoes" /></figure>
+      <div className="my-5 flex-1">
+        <div className="flex items-center gap-6 mb-5">
+           <div className="bg-[#23BE0A0D] text-[#23BE0A] text-base px-3 py-2 rounded-full font-medium">{tags[0]}</div>
+           <div className="bg-[#23BE0A0D] font-medium text-[#23BE0A] text-base px-3 rounded-full p-2">{tags[1]}</div>
         </div>
-        <h1>The Catcher in the Rye</h1>
-        <p>By : Awlad Hossain</p>
-         <hr className="border-dashed my-5" />
+        <h1 className="text-2xl text-[#131313] font-bold mb-3">{bookName}</h1>
+        <p className="text-[#131313CC]">By: {author}</p>
+         
       </div>
-      <div>
-         <h1>finction</h1>
-         <div className="flex justify-between items-center">
-            <p>690</p>
+      <hr className="border-dashed mb-3" />
+      <div className="flex justify-between items-center">
+         <h1>{category}</h1>
+         <div className="flex gap-3 items-center">
+            <p>{rating}</p>
             <img className="text-white" src="/rating.png" alt="" />
          </div>
       </div>
