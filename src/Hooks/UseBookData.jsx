@@ -6,16 +6,12 @@ const UseBookData = () => {
   useEffect(()=>{
    const fetchData = async () =>{
     const res = await fetch("/data.json");
-    const data = res.json();
+    const data =await res.json();
      setData(data);
    }
    fetchData();
   },[])
-  return (
-    <div>
-      
-    </div>
-  );
+  return {data};
 };
 
 export default UseBookData;
