@@ -8,7 +8,7 @@
     "totalPages": 180,
     "rating": 4.5,
     "category": "Fiction",
-    "tags": ["Classic", "Romance"],
+    "tags": ["# Classic", "# Romance"],
     "publisher": "Scribner",
     "yearOfPublishing": 1925
   },
@@ -35,7 +35,7 @@
     "totalPages": 464,
     "rating": 4.7,
     "category": "Young Adult",
-    "tags": ["Social Issues", "Identity"],
+    "tags": ["# Social Issues", "# Identity"],
     "publisher": "Balzer + Bray",
     "yearOfPublishing": 2017
   },
@@ -48,7 +48,7 @@
     "totalPages": 100,
     "rating": 4.0,
     "category": "Education",
-    "tags": ["Planner", "Organization"],
+    "tags": ["# Planner", "# Organization"],
     "publisher": "Academic Press",
     "yearOfPublishing": 2024
   },
@@ -61,7 +61,7 @@
     "totalPages": 500,
     "rating": 4.8,
     "category": "Legal",
-    "tags": ["Law", "Texas"],
+    "tags": ["# Law", "# Texas"],
     "publisher": "Legal Publications",
     "yearOfPublishing": 2021
   },
@@ -74,7 +74,7 @@
     "totalPages": 150,
     "rating": 4.6,
     "category": "Religious",
-    "tags": ["Christianity", "Faith"],
+    "tags": ["# Christianity", "# Faith"],
     "publisher": "Faith Books",
     "yearOfPublishing": 2022
   },
@@ -87,7 +87,7 @@
     "totalPages": 320,
     "rating": 4.4,
     "category": "Philosophy",
-    "tags": ["Spirituality", "Existentialism"],
+    "tags": ["# Spirituality", "# Existentialism"],
     "publisher": "Enlightenment Press",
     "yearOfPublishing": 2020
   },
@@ -100,7 +100,7 @@
     "totalPages": 320,
     "rating": 4.9,
     "category": "Fantasy",
-    "tags": ["Magic", "Adventure"],
+    "tags": ["# Magic", "# Adventure"],
     "publisher": "Bloomsbury",
     "yearOfPublishing": 1997
   },
@@ -113,7 +113,7 @@
     "totalPages": 400,
     "rating": 4.3,
     "category": "Fantasy",
-    "tags": ["Adventure", "Mythical Creatures"],
+    "tags": ["# Adventure", "# Mythical Creatures"],
     "publisher": "Fantasy House",
     "yearOfPublishing": 2023
   }
