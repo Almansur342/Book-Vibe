@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   const { bookId, author, bookName, image, rating, category, tags } = item || {};
-  console.log(tags);
+  // console.log(tags);
   return (
     <Link to={`books-details/${bookId}`}>
-      <div className="border-2 py-4 px-5 card shadow-xl flex flex-col cursor-pointer">
+      <div className="border-2 py-4 px-5 h-[500px] card shadow-xl flex flex-col cursor-pointer">
         <figure className="bg-[#F3F3F3] p-3 rounded-lg"><img className="h-52 object-cover object-center" src={image} alt="Shoes" /></figure>
         <div className="my-5 flex-1">
           <div className="flex items-center gap-6 mb-5">

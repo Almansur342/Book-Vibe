@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 const Cards = () => {
  const {data} = UseBookData();
- console.log(data);
+//  console.log(data);
 
   return (
     <div className="mb-16">

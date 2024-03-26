@@ -1,11 +1,18 @@
 import { useParams } from "react-router-dom";
 import UseBookData from "../../Hooks/UseBookData";
 import { useEffect, useState } from "react";
+import { LocalStorage } from "../../utilites/LocalStorage";
+
+
 
 const BooksDetails = () => {
   const { id } = useParams();
   const { data } = UseBookData();
-  const [matchedData, setMatchedData] = useState({})
+  const [matchedData, setMatchedData] = useState({});
+
+  const handleRead = () =>{
+    LocalStorage(matchedData);
+  }
 
   useEffect(() => {
     const singleData = data.find(item => item?.bookId === parseInt(id));
@@ -13,11 +20,11 @@ const BooksDetails = () => {
   }, [data, id, matchedData])
   // console.log(matchedData); 
   const { bookId, author, bookName, image, rating, category, tags,review,totalPages,publisher,yearOfPublishing } = matchedData || {};
-   console.log(tags);
+  //  console.log(tags);
   return (
     <section className=" mb-16 rounded-lg max-w-6xl mx-auto">
       <div className="container gap-8 flex flex-col mx-auto   lg:flex-row">
-      <div className="rounded-lg dark:bg-gray-100 dark:text-gray-800 flex items-center justify-center p-20 mt-8 lg:mt-0 :h-96">
+      <div className="rounded-lg dark:bg-gray-100 dark:text-gray-800 flex items-center justify-center p-20 mt-8 lg:mt-0 :h-96"> 
           <img src={image} alt="" className="object-cover h-80" />
         </div>
         <div className="flex flex-col  rounded-sm lg:max-w-xl xl:max-w-xl lg:text-left">
@@ -49,7 +56,7 @@ const BooksDetails = () => {
               </div>
             </div>
             <div className="flex gap-6">
-              <button className="text-[#131313] text-lg font-semibold border-2 px-5 py-2 rounded-xl">Read</button>
+              <button onClick={handleRead} className="text-[#131313] text-lg font-semibold border-2 px-5 py-2 rounded-xl">Read</button>
               <button className="text-lg font-semibold text-white bg-[#50B1C9] px-5 py-2 rounded-xl"> Wishlist</button>
             </div>
         </div>

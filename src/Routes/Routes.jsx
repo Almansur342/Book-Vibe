@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import ErroPage from "../Pages/ErrorPage/ErroPage";
 import Home from "../Pages/Home/Home";
 import BooksDetails from "../Pages/BooksDetails/BooksDetails";
+import ListedBooks from "../Pages/ListedBooks/ListedBooks";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/Listed Books",
-        element: <h1>list</h1>,
+        element: <ListedBooks></ListedBooks>,
       },
       {
         path:"/Pages to Read",
