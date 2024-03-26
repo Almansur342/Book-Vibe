@@ -12,7 +12,7 @@ const BooksDetails = () => {
     setMatchedData(singleData);
   }, [data, id, matchedData])
   // console.log(matchedData); 
-  const { bookId, author, bookName, image, rating, category, tags,review } = matchedData || {};
+  const { bookId, author, bookName, image, rating, category, tags,review,totalPages,publisher,yearOfPublishing } = matchedData || {};
    console.log(tags);
   return (
     <section className=" mb-16 rounded-lg max-w-6xl mx-auto">
@@ -21,7 +21,7 @@ const BooksDetails = () => {
           <img src={image} alt="" className="object-cover h-80" />
         </div>
         <div className="flex flex-col  rounded-sm lg:max-w-xl xl:max-w-xl lg:text-left">
-          <h1 className="text-4xl text-[#131313] font-bold">{bookName}</h1>
+          <h1 className="text-4xl text-[#131313] font-bold mb-3">{bookName}</h1>
           <p className="text-[#131313CC] text-xl">By: {author}</p>
           <hr className="my-4" />
           <p className="text-[#131313CC] text-xl">{category}</p>
@@ -31,6 +31,26 @@ const BooksDetails = () => {
            <div className="flex items-center gap-6 my-5">
             <h1 className="bg-[#23BE0A0D] text-[#23BE0A] text-base px-6 py-2 rounded-full font-medium">{tags==undefined?"undefined":`${tags[0]}`}</h1>
             <h1 className="bg-[#23BE0A0D] text-[#23BE0A] text-base px-6 py-2 rounded-full font-medium">{tags==undefined?"undefined":`${tags[1]}`}</h1>
+            </div>
+            <hr className="my-4" />
+
+            <div className="flex items-center gap-10 mb-6">
+              <div>
+                <h1 className="text-[#131313B3] text-base">Number of Pages:</h1>
+                <h1 className="text-[#131313B3] text-base">Publisher:</h1>
+                <h1 className="text-[#131313B3] text-base">Year of Publishing::</h1>
+                <h1 className="text-[#131313B3] text-base">Rating:</h1>
+              </div>
+              <div>
+                 <p className="text-base text-[#131313] font-semibold">{totalPages}</p>
+                 <p className="text-base text-[#131313] font-semibold">{publisher}</p>
+                 <p className="text-base text-[#131313] font-semibold">{yearOfPublishing}</p>
+                 <p className="text-base text-[#131313] font-semibold">{rating}</p>
+              </div>
+            </div>
+            <div className="flex gap-6">
+              <button className="text-[#131313] text-lg font-semibold border-2 px-5 py-2 rounded-xl">Read</button>
+              <button className="text-lg font-semibold text-white bg-[#50B1C9] px-5 py-2 rounded-xl"> Wishlist</button>
             </div>
         </div>
       </div>
