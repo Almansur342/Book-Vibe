@@ -7,6 +7,8 @@ import ListedBooks from "../Pages/ListedBooks/ListedBooks";
 // import WishList from "../components/WishList/WishList";
 import DynamicListPage from "../Pages/DynamicListPage/DynamicListPage";
 import WishList from "../Pages/WishList/WishList";
+import Contact from "../Pages/Contact/Contact";
+
 
 const router = createBrowserRouter([
   {
@@ -28,8 +30,8 @@ const router = createBrowserRouter([
         element: <h1>Pages to Read</h1>,
       },
       {
-        path:"/New Releases",
-        element: <h1>new realese</h1>,
+        path:"/contact-us",
+        element: <Contact></Contact>
       },
       {
         path:"/Best Sellers",

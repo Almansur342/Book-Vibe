@@ -27,7 +27,7 @@ const Navbar = () => {
 
             <NavLink to="/Pages to Read" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 rounded cursor-pointer px-3 font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>Pages to Read</a></NavLink>
 
-            <NavLink to="/New Releases" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 cursor-pointer rounded px-3 font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>New Releases</a></NavLink>
+            <NavLink to="/contact-us" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 cursor-pointer rounded px-3 font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>Contact Us</a></NavLink>
 
             <NavLink to="/Best Sellers" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 rounded px-3 cursor-pointer font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>Best Sellers</a></NavLink>
           </ul>
