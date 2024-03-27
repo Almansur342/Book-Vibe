@@ -29,7 +29,7 @@ const Navbar = () => {
 
             <NavLink to="/contact-us" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 cursor-pointer rounded px-3 font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>Contact Us</a></NavLink>
 
-            <NavLink to="/Best Sellers" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 rounded px-3 cursor-pointer font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>Best Sellers</a></NavLink>
+            <NavLink to="/about-us" className={({isActive})=> isActive? 'text-[#23BE0A] border py-1 rounded px-3 cursor-pointer font-semibold border-[#23BE0A]': 'text-[#131313CC]'}><a>About Us</a></NavLink>
           </ul>
         </div>
         <div className="navbar-end space-x-3">

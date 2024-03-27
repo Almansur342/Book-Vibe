@@ -8,6 +8,8 @@ import ListedBooks from "../Pages/ListedBooks/ListedBooks";
 import DynamicListPage from "../Pages/DynamicListPage/DynamicListPage";
 import WishList from "../Pages/WishList/WishList";
 import Contact from "../Pages/Contact/Contact";
+import AboutUs from "../Pages/AboutUs/AboutUs";
+import Barchart from "../Pages/BarChart/Barchart";
 
 
 const router = createBrowserRouter([
@@ -27,15 +29,15 @@ const router = createBrowserRouter([
       // },
       {
         path:"/Pages to Read",
-        element: <h1>Pages to Read</h1>,
+        element:<Barchart></Barchart>,
       },
       {
         path:"/contact-us",
         element: <Contact></Contact>
       },
       {
-        path:"/Best Sellers",
-        element: <h1>Best Sellers</h1>,
+        path:"/about-us",
+        element: <AboutUs></AboutUs>,
       },
       {
         path:"/books-details/:id",

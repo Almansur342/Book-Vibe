@@ -3,7 +3,7 @@ import Wish from "../../components/Wish/Wish";
 
 const WishList = () => {
   const {localData} = useWishLocalStorage();
-  console.log(localData);
+  // console.log(localData);
   return (
     <div>
        {
