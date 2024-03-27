@@ -6,7 +6,7 @@ import BooksDetails from "../Pages/BooksDetails/BooksDetails";
 import ListedBooks from "../Pages/ListedBooks/ListedBooks";
 // import WishList from "../components/WishList/WishList";
 import DynamicListPage from "../Pages/DynamicListPage/DynamicListPage";
-import Wish from "../components/Wish/Wish";
+import WishList from "../Pages/WishList/WishList";
 
 const router = createBrowserRouter([
   {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
           },
           {
             path:'wishlist',
-            element: <Wish></Wish>,
+            element:<WishList></WishList>,
           }
         ]
       }
