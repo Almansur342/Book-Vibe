@@ -4,6 +4,9 @@ import ErroPage from "../Pages/ErrorPage/ErroPage";
 import Home from "../Pages/Home/Home";
 import BooksDetails from "../Pages/BooksDetails/BooksDetails";
 import ListedBooks from "../Pages/ListedBooks/ListedBooks";
+// import WishList from "../components/WishList/WishList";
+import DynamicListPage from "../Pages/DynamicListPage/DynamicListPage";
+import Wish from "../components/Wish/Wish";
 
 const router = createBrowserRouter([
   {
@@ -15,10 +18,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>
       },
-      {
-        path:"/Listed Books",
-        element: <ListedBooks></ListedBooks>,
-      },
+      // {
+      //   path:"/Listed Books",
+      //   element: <ListedBooks></ListedBooks>,
+        
+      // },
       {
         path:"/Pages to Read",
         element: <h1>Pages to Read</h1>,
@@ -35,6 +39,20 @@ const router = createBrowserRouter([
         path:"/books-details/:id",
         element:<BooksDetails></BooksDetails>,
       },
+      {
+        path:'/Listed Books',
+        element:<DynamicListPage></DynamicListPage>,
+        children: [
+          {
+            index:true,
+            element:<ListedBooks></ListedBooks>,
+          },
+          {
+            path:'wishlist',
+            element: <Wish></Wish>,
+          }
+        ]
+      }
     ],
 
   },

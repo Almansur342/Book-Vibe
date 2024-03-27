@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import UseBookData from "../../Hooks/UseBookData";
 import { useEffect, useState } from "react";
-import { LocalStorage } from "../../utilites/LocalStorage";
+import { LocalStorage, wishLocalStorage } from "../../utilites/LocalStorage";
 
 
 
@@ -12,6 +12,10 @@ const BooksDetails = () => {
 
   const handleRead = () =>{
     LocalStorage(matchedData);
+  }
+
+  const handleWish = () =>{
+    wishLocalStorage(matchedData);
   }
 
   useEffect(() => {
@@ -57,7 +61,7 @@ const BooksDetails = () => {
             </div>
             <div className="flex gap-6">
               <button onClick={handleRead} className="text-[#131313] text-lg font-semibold border-2 px-5 py-2 rounded-xl">Read</button>
-              <button className="text-lg font-semibold text-white bg-[#50B1C9] px-5 py-2 rounded-xl"> Wishlist</button>
+              <button onClick={handleWish} className="text-lg font-semibold text-white bg-[#50B1C9] px-5 py-2 rounded-xl"> Wishlist</button>
             </div>
         </div>
       </div>
