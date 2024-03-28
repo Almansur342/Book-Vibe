@@ -12,6 +12,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import BarCha from "../Pages/BarChart/BarCha";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,7 +55,8 @@ const router = createBrowserRouter([
           {
             path:'wishlist',
             element:<WishList></WishList>,
-          }
+          },
+          
         ]
       }
     ],
