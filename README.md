@@ -16,5 +16,5 @@ Welcome to Book Vibe, your go-to destination for all things books! Explore our c
 
 - **Reading Challenges and Goals**: Set reading goals, track your progress, and participate in fun reading challenges. Whether you aim to read more diverse authors or tackle classic literature, our platform supports your reading journey every step of the way.
 
-Visit [Book Vibe](https://www.bookvibe.com) now and immerse yourself in a world of endless literary possibilities!
+Visit [Book Vibe](https://66058bf914c2ff24490f06d1--dapper-kheer-95c208.netlify.app/) now and immerse yourself in a world of endless literary possibilities!
 
