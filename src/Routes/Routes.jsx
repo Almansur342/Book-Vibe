@@ -9,7 +9,7 @@ import DynamicListPage from "../Pages/DynamicListPage/DynamicListPage";
 import WishList from "../Pages/WishList/WishList";
 import Contact from "../Pages/Contact/Contact";
 import AboutUs from "../Pages/AboutUs/AboutUs";
-import Barchart from "../Pages/BarChart/Barchart";
+import BarCha from "../Pages/BarChart/BarCha";
 
 
 const router = createBrowserRouter([
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       // },
       {
         path:"/Pages to Read",
-        element:<Barchart></Barchart>,
+        element:<BarCha></BarCha>,
       },
       {
         path:"/contact-us",
