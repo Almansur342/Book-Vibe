@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Read = ({ data }) => {
-  const { image, bookName, author, category, tags, publisher, yearOfPublishing, rating, totalPages } = data || {};
+  const { image, bookName, author, category, tags, publisher, bookId,yearOfPublishing, rating, totalPages } = data || {};
   return (
     <div className=" flex flex-col  max-w-6xl mx-auto p-6 sm:flex-row border-2 mb-6">
       <div className="flex gap-8">
@@ -37,7 +39,7 @@ const Read = ({ data }) => {
               <div className="flex gap-5">
                 <p className="bg-[#328EFF26] font-medium text-[#328EFF] text-base px-4 rounded-full p-2">Category: {category}</p>
                 <p className="bg-[#FFAC3326] font-medium text-[#FFAC33] text-base px-4 rounded-full p-2"> Rating: {rating}</p>
-                <p className="bg-[#23BE0A] font-medium text-[#FFFFFF] text-lg px-4 rounded-full p-2">View Details</p>
+                <Link to={`/books-details/${bookId}`} className="bg-[#23BE0A] font-medium text-[#FFFFFF] text-lg px-4 rounded-full p-2">View Details</Link>
               </div>
             </div>
           </div>
