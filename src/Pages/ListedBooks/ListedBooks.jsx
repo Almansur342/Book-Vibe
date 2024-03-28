@@ -7,7 +7,7 @@ const ListedBooks = () => {
   // console.log(localData);
   // const [products, setProducts] = useState([]);
 
-  const newData = [...localData];
+  // const newData = [...localData];
   // setProducts(newData);
   // console.log(products);
   // console.log('heloo')
